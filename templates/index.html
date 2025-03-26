@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chatbot</h2>
+        <p>Your Ai-Assistant</p>
+      </div>
+      <div class="chat-box" id="chat-box">
+        <!-- Chat messages will appear here -->
+      </div>
+      <!-- Quick Reply Container -->
+      <div id="quick-reply-container" class="quick-reply-container"></div>
+      <div class="input-container">
+        <input
+          type="text"
+          id="user-query"
+          placeholder="Ask me anything..."
+          onkeypress="handleKeyPress(event)"
+          autofocus
+        />
+        <button onclick="sendQuery()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <script>
+      // When the page loads, display an initial bot message and main menu quick reply buttons.
+      window.onload = function() {
+        addBotMessage("Hi! I'm your Ai-assistant. How can I help you today?");
+        updateQuickReplyButtons(["Product Details", "Treatment Plan", "Payment Detail", "Claim Info"]);
+        quickReplyStack = [["Product Details", "Treatment Plan", "Payment Detail", "Claim Info"]];
+      };
+    </script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
