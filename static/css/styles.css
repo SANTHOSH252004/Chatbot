@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #141e30, #243b55);
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Animated Background */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Chat Container */
+  .chat-container {
+    width: 600px;
+    max-width: 100%;
+    height: 750px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: containerFadeIn 1s ease;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .chat-header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Message Styles */
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  .message .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  
+  .message.user .avatar {
+    background: #667eea;
+    color: #fff;
+  }
+  
+  .message.bot .avatar {
+    background: #764ba2;
+    color: #fff;
+  }
+  
+  .message .content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 70%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .message.user .content {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    margin-left: auto;
+  }
+  
+  /* Quick Reply Container */
+  .quick-reply-container {
+    padding: 15px 20px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Quick Reply Buttons */
+  .quick-reply {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .quick-reply:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Input Container */
+  .input-container {
+    padding: 15px 20px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    border-radius: 15px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .input-container input::placeholder {
+    color: #ddd;
+  }
+  
+  .input-container button {
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* System Message */
+  .system-message {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes containerFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
