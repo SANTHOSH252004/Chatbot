@@ -1,0 +1,122 @@
+{
+  "Product Details": [
+    {
+      "question": "Tell me about braces",
+      "answer": "Braces are devices used to align and straighten teeth."
+    }
+  ],
+  "navigation": [
+    {
+      "question": "Go Back",
+      "answer": "Going back...",
+      "is_navigation": true
+    }
+  ],
+  "customer_service": [
+    {
+      "question": "Check my order",
+      "answer": "Sure! Please provide your order number.",
+      "quick_replies": ["GOT1234", "GOT5678", "Go Back"]
+    },
+    {
+      "question": "Cancel an order",
+      "answer": "I can help with cancellations. Please confirm your order number.",
+      "quick_replies": ["CNL1234", "CNL5678", "Go Back"]
+    }
+  ],
+  "order_tracking": [
+    {
+      "question": "Where is my order",
+      "answer": "You can track your order status in 'My Account' > 'Order History'. Live tracking updates are available once your package ships."
+    },
+    {
+      "question": "How long does delivery take",
+      "answer": "Standard delivery takes 3-5 business days. Express shipping delivers within 24 hours for eligible areas."
+    }
+  ],
+  "product_information": [
+    {
+      "question": "Is this item in stock",
+      "answer": "Real-time stock availability is shown on the product page. Items marked 'In Stock' ship immediately."
+    },
+    {
+      "question": "What are the product specifications?",
+      "answer": "Full specifications are listed under the 'Product Details' section. Contact support for technical queries."
+    }
+  ],
+  "returns_refunds": [
+    {
+      "question": "How do I return an item",
+      "answer": "Initiate returns via 'Order History' within 30 days. Print the prepaid label and attach it to your package."
+    },
+    {
+      "question": "When will I get my refund",
+      "answer": "Refunds process within 5 business days after we receive your return. Payment method determines refund timing."
+    }
+  ],
+  "payment_issues": [
+    {
+      "question": "What payment methods do you accept",
+      "answer": "We accept Visa, Mastercard, PayPal, and Klarna. All transactions are SSL-secured."
+    },
+    {
+      "question": "Why was my payment declined",
+      "answer": "Common reasons: insufficient funds, incorrect CVV, or bank security block. Contact your bank for details."
+    }
+  ],
+  "account_support": [
+    {
+      "question": "How do I reset my password",
+      "answer": "Use 'Forgot Password' on the login page. A reset link will be sent to your registered email."
+    },
+    {
+      "question": "Can I merge multiple accounts",
+      "answer": "Account merging isn't supported for security reasons. Please use one primary account for all purchases."
+    }
+  ],
+  "dental_products": [
+    {
+      "question": "What types of braces do you offer?",
+      "answer": "We offer traditional metal braces, ceramic braces, lingual braces, and Invisalign. Each type has its own benefits depending on your needs."
+    },
+    {
+      "question": "How much does Invisalign cost?",
+      "answer": "Invisalign treatment typically ranges from $3,000 to $7,000 depending on the complexity. Financing and insurance options are available."
+    },
+    {
+      "question": "Do you offer clear braces?",
+      "answer": "Yes, we offer clear ceramic braces which are less noticeable compared to traditional metal braces."
+    }
+  ],
+  "treatment_plans": [
+    {
+      "question": "How long does treatment take?",
+      "answer": "Treatment time varies. Traditional braces take 18-24 months on average, while Invisalign can take 12-18 months depending on the case."
+    },
+    {
+      "question": "Do I need a retainer after braces?",
+      "answer": "Yes, retainers help maintain your teeth alignment after braces are removed. We offer both fixed and removable retainers."
+    }
+  ],
+  "payment_insurance": [
+    {
+      "question": "Do you accept insurance for braces?",
+      "answer": "Yes, we accept most major insurance plans. Please check with your provider to confirm coverage."
+    },
+    {
+      "question": "Do you offer payment plans?",
+      "answer": "Yes, we offer flexible payment plans to make orthodontic treatment affordable. Contact us for details."
+    }
+  ],
+  "maintenance_care": [
+    {
+      "question": "How do I clean my Invisalign trays?",
+      "answer": "Rinse them with lukewarm water and brush gently with a soft toothbrush. Avoid hot water as it can warp the trays."
+    },
+    {
+      "question": "What foods should I avoid with braces?",
+      "answer": "Avoid sticky, hard, or chewy foods like gum, popcorn, and caramel to prevent damage to your braces."
+    }
+  ]
+}
+
